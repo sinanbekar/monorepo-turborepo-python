@@ -1,0 +1,13 @@
+[flake8]
+select = B,B9,C,D,DAR,E,F,N,RST,S,W
+ignore = E203,E501,RST201,RST203,RST301,W503
+max-line-length = 80
+max-complexity = 10
+docstring-convention = google
+per-file-ignores = tests/*:S101
+rst-roles = class,const,func,meth,mod,ref
+rst-directives = deprecated
+extend-exclude = 
+    # TODO: Remove this once flake8 > 4.0.1 is released as this has been fixed
+    #   upstream: https://github.com/PyCQA/flake8/pull/1443
+    .nox

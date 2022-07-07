@@ -1,0 +1,12 @@
+{
+  "name": "python",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "poetry install",
+    "build": "poetry run poe build",
+    "dev": "poetry run poe dev",
+    "test": "poetry run poe test",
+    "lint": "poetry run poe lint"
+  }
+}
